@@ -6,8 +6,7 @@ print("prod")
 SECRET_KEY = config("SECRET_KEY")
 DEBUG = False
 ALLOWED_HOSTS = [
-    "lemonpy.com",
-    "www.lemonpy.com",
+    config("HOSTED_ZONE_1")
     ]
 
 # HTTPS settings

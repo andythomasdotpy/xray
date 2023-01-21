@@ -1,4 +1,6 @@
-settings = "prod"
+settings = "dev"
+
+
 
 if settings == "prod":
     from .prod import *
