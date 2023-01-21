@@ -1,4 +1,4 @@
-settings = "prod"
+settings = "dev"
 
 
 

@@ -4,12 +4,12 @@ from .base import *
 
 print("prod")
 SECRET_KEY = config("SECRET_KEY")
-HOSTED_ZONE_1 = config("HOSTED_ZONE_1")
+# HOSTED_ZONE_1 = config("HOSTED_ZONE_1")
 
 DEBUG = False
 ALLOWED_HOSTS = [
-    HOSTED_ZONE_1
-    ]
+    config("HOSTED_ZONE_1")    
+]
 
 # HTTPS settings
 SESSION_COOKIE_SECURE = True
