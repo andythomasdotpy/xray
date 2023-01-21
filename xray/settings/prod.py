@@ -9,7 +9,7 @@ SECRET_KEY = config("SECRET_KEY")
 DEBUG = False
 ALLOWED_HOSTS = [
     "xray-env.eba-fczaaky6.us-west-2.elasticbeanstalk.com",
-    "54.186.159.77",    
+    "127.0.0.1",    
 ]
 
 # HTTPS settings
