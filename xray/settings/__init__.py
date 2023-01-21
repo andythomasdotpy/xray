@@ -1,8 +1,9 @@
-settings = "prod"
+from decouple import config
 
-
-
-if settings == "prod":
-    from .prod import *
-else:
-    from .dev import *
+try:
+    SETTINGS_VAR = config("SETTINGS_DEV_PROD")
+    print(SETTINGS_VAR)
+    if SETTINGS_VAR == "prod":
+        from .prod import *
+except:
+        from .dev import *
